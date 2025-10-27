@@ -1,0 +1,30 @@
+# .NET
+bin/
+obj/
+*.user
+*.pdb
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Build outputs
+dist/
+www/
+*.tmp
+
+# Environment files
+.env
+appsettings.Development.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Capacitor
+android/
+ios/
