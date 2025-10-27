@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EMERGENCY PANIC BUTTON</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Emergency Panic Button</h1>
+        <p>Select your role and press the button in an emergency.</p>
+
+        <div class="role-selector">
+            <label><input type="radio" name="role" value="adults" checked> ADULTS</label>
+            <label><input type="radio" name="role" value="women"> WOMEN</label>
+            <label><input type="radio" name="role" value="kids"> KIDS</label>
+            <label><input type="radio" name="role" value="men"> MEN</label>
+        </div>
+
+        <div class="selectors">
+            <label for="category">Select Alert Category:</label>
+            <select id="category">
+                <option value="">-- Choose Category --</option>
+                <option value="police">🚓 Police Station</option>
+                <option value="hospital">🏥 Hospital</option>
+            </select>
+        </div>
+
+        <button type="button" class="panic-button" onclick="sendAlert()">SEND ALERT</button>
+
+        <div id="loadingSpinner" class="hidden">⌛ Getting location...</div>
+        <p class="message" id="confirmationMsg"></p>
+    </main>
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>DEVELOPER</h3>
+            <p class="developer-name">KHOMOTSO JONATHAN GOLE</p>
+            <p>Emergency Panic Button</p>
+            <p>Full-Stack Developer</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>CONTACT</h3>
+            <p><a href="mailto:khomotsojonathan2@gmail.com" class="footer-link">📧 khomotsojonathan2@gmail.com</a></p>
+            <p>📞 0783672051 / 0795686171</p>
+            <p><a href="https://www.linkedin.com/in/khomotso-jonathan-gole" target="_blank" rel="noopener noreferrer" class="footer-link">💼 LinkedIn</a></p>
+            <p><a href="https://github.com/Khomotso-Jonathan-Gole" target="_blank" rel="noopener noreferrer" class="footer-link">⚡ GitHub</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>LEGAL</h3>
+            <p>© 2025 Emergency Panic Button</p>
+            <p>All Rights Reserved</p>
+            <p>Proprietary Software</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
